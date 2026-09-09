@@ -1,0 +1,93 @@
+{% extends '@Contao/content_element/_base.html.twig' %}
+{% use '@Contao/component/_stylesheet.html.twig' %}
+
+{% set attributes = attrs()
+    .addClass('content-splide')
+    .mergeWith(attributes|default)
+%}
+
+{% block content %}
+    {% set slider_attributes = attrs()
+        .set('id', splide_id)
+        .addClass('splide')
+        .addClass(splide_classes)
+        .set('data-splide-slider', '')
+        .set('data-splide-options', splide_options|json_encode)
+        .setIfExists(
+            'data-splide-transition-component',
+            splide_transition_component
+        )
+        .setIfExists('aria-label', splide_aria_label)
+        .mergeWith(slider_attributes|default)
+    %}
+
+    <section{{ slider_attributes }}>
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% block slides %}
+                    {% for fragment in nested_fragments %}
+                        {% block slide %}
+                            <li class="splide__slide">
+                                {% block slide_inner %}
+                                    {{ content_element(fragment) }}
+                                {% endblock %}
+                            </li>
+                        {% endblock %}
+                    {% endfor %}
+                {% endblock %}
+            </ul>
+        </div>
+    </section>
+{% endblock %}
+
+{% block script %}
+    {% add 'berecont_splide_library_js' to body %}
+        <script
+            src="{{ asset('bundles/contaosplide/js/splide.min.js') }}"
+            defer
+        ></script>
+    {% endadd %}
+
+    {% if splide_uses_autoscroll %}
+        {% add 'berecont_splide_auto_scroll_js' to body %}
+            <script
+                src="{{ asset('bundles/contaosplide/js/extensions/splide-extension-auto-scroll.min.js') }}"
+                defer
+            ></script>
+        {% endadd %}
+    {% endif %}
+
+    {% if splide_transition_script %}
+        {% add 'berecont_splide_custom_transition_js' to body %}
+            <script
+                src="{{ asset(splide_transition_script) }}"
+                defer
+            ></script>
+        {% endadd %}
+    {% endif %}
+
+    {% add 'berecont_splide_initializer_js' to body %}
+        <script
+            src="{{ asset('bundles/contaosplide/js/splide-init.js') }}"
+            defer
+        ></script>
+    {% endadd %}
+{% endblock %}
+
+{% block style %}
+    {% add 'berecont_splide_css' to stylesheets %}
+        {% with {
+            file: asset('bundles/contaosplide/css/splide.min.css')
+        } %}
+            {{ block('stylesheet_component') }}
+        {% endwith %}
+    {% endadd %}
+
+    {% add 'berecont_splide_custom_css' to stylesheets %}
+        {% with {
+            file: asset('bundles/contaosplide/css/style.css')
+        } %}
+            {{ block('stylesheet_component') }}
+        {% endwith %}
+    {% endadd %}
+{% endblock %}

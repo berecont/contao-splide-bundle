@@ -1,0 +1,21 @@
+.splide[data-splide-transition-component]
+    .splide__slide {
+    opacity: 0.65;
+    transform: scale(0.92);
+    transition:
+        opacity 400ms ease,
+        transform 400ms ease;
+}
+
+.splide[data-splide-transition-component]
+    .splide__slide.is-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .splide[data-splide-transition-component]
+        .splide__slide {
+        transition: none;
+    }
+}

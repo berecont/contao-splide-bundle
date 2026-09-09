@@ -1,0 +1,97 @@
+CTE:
+    splide:
+        - SplideJS-Slider
+        - Erzeugt einen Slider aus verschachtelten Inhaltselementen.
+
+tl_content:
+    splide_transition_legend: Übergang und Ablauf
+    splide_layout_legend: Darstellung
+    splide_autoscroll_legend: AutoScroll
+    splide_behavior_legend: Verhalten
+    splide_navigation_legend: Navigation
+    splide_accessibility_legend: Barrierefreiheit
+    splide_expert_legend: Erweiterte Einstellungen
+
+    splideTransition:
+        - Übergang
+        - Wählen Sie den Übergangseffekt des Sliders aus. Bei aktiviertem AutoScroll wird automatisch „Verschieben“ verwendet.
+
+    splideInterval:
+        - Slide-Intervall [interval]
+        - Geben Sie das Intervall in Millisekunden ein. Mit 0 wird die automatische Wiedergabe deaktiviert. Bei AutoScroll wird diese Einstellung nicht verwendet.
+
+    splideSpeed:
+        - Übergangsgeschwindigkeit [speed]
+        - Geben Sie die Dauer des normalen Slide-Übergangs in Millisekunden ein.
+
+    splideStart:
+        - Slide-Versatz [start]
+        - Legt den anfänglich aktiven Slide fest. Die Zählung beginnt bei 0.
+
+    splideLoop:
+        - Kontinuierlich
+        - Wiederholt den normalen Slider als Schleife. Bei aktiviertem AutoScroll wird der Schleifenbetrieb automatisch gesetzt.
+
+    splideCentered:
+        - Aktiven Slide zentrieren [focus center]
+        - Zentriert den aktiven Slide innerhalb des Sliders.
+
+    splidePerPage:
+        - Slides pro Ansicht [perPage]
+        - Legt fest, wie viele Slides gleichzeitig sichtbar sind.
+
+    splidePerMove:
+        - Slides pro Wechsel [perMove]
+        - Legt fest, um wie viele Slides sich der Slider bei einem Klick auf Vor oder Zurück bewegt.
+
+    splideGap:
+        - Abstand zwischen Slides [gap]
+        - Geben Sie einen gültigen CSS-Wert ein, zum Beispiel 1rem oder 24px.
+
+    splideAutoScroll:
+        - AutoScroll aktivieren
+        - Bewegt die Slides kontinuierlich. Die Erweiterung wird nur für diesen Slider geladen und aktiviert.
+
+    splideAutoScrollSpeed:
+        - AutoScroll-Geschwindigkeit
+        - Geben Sie die Geschwindigkeit in Pixeln pro Frame ein, zum Beispiel 0.5 oder -0.5. Ein negatives Vorzeichen kehrt die Richtung um.
+
+    splidePauseOnHover:
+        - Bei Hover pausieren [pauseOnHover]
+        - Pausiert Autoplay beziehungsweise AutoScroll, solange sich der Mauszeiger über dem Slider befindet.
+
+    splidePauseOnFocus:
+        - Bei Tastaturfokus pausieren [pauseOnFocus]
+        - Pausiert Autoplay beziehungsweise AutoScroll, solange ein Slider-Element den Tastaturfokus besitzt.
+
+    splideHideArrows: 
+        - Navigationspfeile ausblenden [arrows]
+        - Blendet die Pfeile für den vorherigen und nächsten Slide aus.
+
+    splideHidePagination:
+        - Pagination ausblenden [pagination]
+        - Blendet die Seitennavigation des Sliders aus.
+
+    splideShowAutoplayToggle:
+        - Autoplay-Steuerung anzeigen
+        - Zeigt eine Schaltfläche zum Starten und Pausieren des normalen Autoplays an. Bei AutoScroll wird sie nicht ausgegeben.
+
+    splideAriaLabel:
+        - Slider-Bezeichnung
+        - Geben Sie eine kurze, verständliche Bezeichnung für Screenreader ein.
+
+    splideClasses:
+        - Zusätzliche Slider-Klassen
+        - Die Klassen werden am äußeren Splide-Element ergänzt. Mehrere Klassen werden durch Leerzeichen getrennt.
+
+    splideBreakpoints:
+        - Breakpoints
+        - Geben Sie responsive Splide-Einstellungen als gültiges JSON-Objekt ein.
+
+    splideOptions:
+        - Zusätzliche Splide-Optionen
+        - Geben Sie weitere Splide-Optionen als JSON-Objekt ein. AutoScroll wird ausschließlich über die dafür vorgesehenen Backendfelder gesteuert.
+
+    slide: Verschieben
+    fade: Überblenden
+    zoom: Zoom

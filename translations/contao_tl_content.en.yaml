@@ -1,0 +1,97 @@
+CTE:
+    splide:
+        - SplideJS slider
+        - Creates a slider from nested content elements.
+
+tl_content:
+    splide_transition_legend: Transition and playback
+    splide_layout_legend: Layout
+    splide_autoscroll_legend: AutoScroll
+    splide_behavior_legend: Behaviour
+    splide_navigation_legend: Navigation
+    splide_accessibility_legend: Accessibility
+    splide_expert_legend: Advanced settings
+
+    splideTransition:
+        - Transition
+        - Select the slider transition. When AutoScroll is enabled, “Slide” is used automatically.
+
+    splideInterval:
+        - Slide interval [interval]
+        - Enter the interval in milliseconds. Set it to 0 to disable automatic playback. This setting is not used by AutoScroll.
+
+    splideSpeed:
+        - Transition speed [speed]
+        - Enter the duration of the regular slide transition in milliseconds.
+
+    splideStart:
+        - Slide offset [start]
+        - Defines the initially active slide. Counting starts at 0.
+
+    splideLoop:
+        - Continuous
+        - Repeats the regular slider as a loop. Loop mode is enabled automatically for AutoScroll.
+
+    splideCentered:
+        - Center active slide [focus center]
+        - Centers the active slide within the slider.
+
+    splidePerPage:
+        - Slides per page [perPage]
+        - Defines how many slides are visible at the same time.
+
+    splidePerMove:
+        - Slides per move [perMove]
+        - Defines how many slides are moved when navigating forwards or backwards.
+
+    splideGap:
+        - Gap between slides [gap]
+        - Enter a valid CSS value, such as 1rem or 24px.
+
+    splideAutoScroll:
+        - Enable AutoScroll
+        - Moves the slides continuously. The extension is loaded and mounted only for this slider.
+
+    splideAutoScrollSpeed:
+        - AutoScroll speed
+        - Enter the speed in pixels per frame, for example 0.5 or -0.5. A negative value reverses the direction.
+
+    splidePauseOnHover:
+        - Pause on hover [pauseOnHover]
+        - Pauses autoplay or AutoScroll while the pointer is over the slider.
+
+    splidePauseOnFocus:
+        - Pause on keyboard focus [pauseOnFocus]
+        - Pauses autoplay or AutoScroll while an element inside the slider has keyboard focus.
+
+    splideHideArrows:
+        - Hide navigation arrows [arrows]
+        - Hides the previous and next navigation arrows.
+
+    splideHidePagination:
+        - Hide pagination [pagination]
+        - Hides the slider pagination.
+
+    splideShowAutoplayToggle:
+        - Show autoplay control
+        - Displays a button for starting and pausing regular autoplay. It is not rendered for AutoScroll.
+
+    splideAriaLabel:
+        - Slider label
+        - Enter a short descriptive label for screen readers.
+
+    splideClasses:
+        - Additional slider classes
+        - The classes are added to the outer Splide element. Separate multiple classes with spaces.
+
+    splideBreakpoints:
+        - Breakpoints
+        - Enter responsive Splide settings as a valid JSON object.
+
+    splideOptions:
+        - Additional Splide options
+        - Enter additional Splide options as a JSON object. AutoScroll is controlled exclusively by its dedicated backend fields.
+
+    slide: Slide
+    fade: Fade
+    zoom: Zoom

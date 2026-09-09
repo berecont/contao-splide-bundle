@@ -1,0 +1,19 @@
+parameters:
+    berecont_contao_splide.transitions:
+        slide:
+            label: contao_splide.transition.slide
+            type: slide
+            script: null
+            component: null
+
+        fade:
+            label: contao_splide.transition.fade
+            type: fade
+            script: null
+            component: null
+
+        zoom:
+            label: contao_splide.transition.zoom
+            type: slide
+            script: bundles/contaosplide/js/transitions/zoom.js
+            component: BerecontSplideTransitions.zoom

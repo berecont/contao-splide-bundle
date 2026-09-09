@@ -1,0 +1,13 @@
+contao_splide:
+    transition:
+        slide: Slide [slide]
+        fade: Überblenden [fade]
+        zoom: Zoom [zoom]
+
+    autoplay:
+        play: Automatische Wiedergabe starten
+        pause: Automatische Wiedergabe pausieren
+
+    error:
+        invalid_json: 'Das JSON ist ungültig: %message%'
+        json_object_required: Das JSON muss ein Objekt enthalten.

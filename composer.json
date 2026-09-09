@@ -1,0 +1,41 @@
+{
+    "name": "berecont/contao-splide-bundle",
+    "description": "Stellt ein verschachteltes SplideJS-Slider-Inhaltselement für Contao bereit.",
+    "license": "MIT",
+    "type": "contao-bundle",
+    "keywords": ["contao","slider","splide"],
+    "authors": [
+        {
+            "name": "Bernhard Renner",
+            "email": "info@berecont.at",
+            "homepage": "https://berecont.at"
+        }
+    ],
+    "support": {
+        "email": "info@berecont.at",
+        "issues": "https://github.com/berecont/contao-splide-bundle/issues",
+        "source": "https://github.com/berecont/contao-splide-bundle",
+        "forum": "https://community.contao.org"        
+    },
+    "require": {
+        "php": "^8.3",
+        "contao/core-bundle": "^5.7",
+        "contao/manager-bundle": "^5.7"
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Berecont\\ContaoSplideBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Berecont\\ContaoSplideBundle\\ContaoManager\\Plugin",
+        "ai-assistance": {
+            "used": true,
+            "tools": ["ChatGPT"],
+            "scope": "Code-Generierung und Review, teilweise Dokumentation"
+        } 
+    }
+}

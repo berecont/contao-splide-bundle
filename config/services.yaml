@@ -1,0 +1,19 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Berecont\ContaoSplideBundle\:
+        resource: '../src/'
+        exclude:
+            - '../src/ContaoSplideBundle.php'
+
+    Berecont\ContaoSplideBundle\Controller\ContentElement\SplideElementController:
+        arguments:
+            $transitions: '%berecont_contao_splide.transitions%'
+
+    Berecont\ContaoSplideBundle\EventListener\DataContainer\SplideTransitionOptionsListener:
+        arguments:
+            $transitions: '%berecont_contao_splide.transitions%'
+        public: true

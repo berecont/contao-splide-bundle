@@ -1,0 +1,43 @@
+# Composer dependencies
+/vendor/
+
+# Composer lock file
+/composer.lock
+
+# PHPUnit
+/.phpunit.cache/
+/.phpunit.result.cache
+
+# PHPStan
+/.phpstan.cache/
+
+# PHP CS Fixer
+/.php-cs-fixer.cache
+
+# IDEs
+/.idea/
+.vscode/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+auth.json
+
+# Local build/test artifacts
+/build/
+/coverage/
+
+# https://github.com/contao/package-metadata
+/package-metadata/ 
