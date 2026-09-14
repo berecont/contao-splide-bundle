@@ -24,7 +24,7 @@ Der Eintrag, die Klasse muss `splide--timeline` lauten.
 
 ### Anpassung der `splide-init.js`  
 Es ist notwendig folgende Anpassung in der `splide-init.js` durchzuführen:  
-ab Zeile 12
+ab Zeile 112 einfügen  
 ``` javascript
     /*
     * staRt timeline extension
